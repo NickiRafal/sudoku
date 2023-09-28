@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/sudoku/**")
-                .allowedOrigins("http://localhost:8888") // Dodaj odpowiedni adres klienta
+                .allowedOrigins("https://nickirafal.github.io/sudoku/") // Dodaj odpowiedni adres klienta
                 .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
 }

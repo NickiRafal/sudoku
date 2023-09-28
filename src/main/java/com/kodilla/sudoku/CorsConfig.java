@@ -12,7 +12,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://nickirafal.github.io/sudoku/") // Zmień na adres Twojej strony
+                .allowedOrigins("https://nickirafal.github.io") // Zmień na adres Twojej strony
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("Content-Type");
     }
